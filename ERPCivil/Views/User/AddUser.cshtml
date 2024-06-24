@@ -1,0 +1,47 @@
+﻿@model ERPCivil.BusinessEntity.UserViewModel
+
+@{
+    Layout = null;
+}
+
+<form asp-action="AddUser" asp-controller="User" method="post">
+
+    <label>FirstName</label>
+    <input type="text" asp-for="UserName" />
+
+
+    <label>LastName</label>
+    <input type="text" asp-for="Name" />
+
+
+    <label>Email</label>
+    <input type="email" asp-for="EmailId" />
+
+
+    <label>PhoneNumber</label>
+    <input type="tel" asp-for="ContactNo" />
+
+
+
+    
+
+    <input type="submit" value="save">
+
+
+
+  @*   <input type="hidden" asp-for="UserId" />
+
+    <div class="form-group">
+        <label for="batch">UserName</label>
+        <input type="text" class="form-control" id="StateName" placeholder="Enter UserName" asp-for="UserName">
+    </div>
+
+
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="offcanvas">Cancel</button>
+
+    </div>  *@
+
+</form>
